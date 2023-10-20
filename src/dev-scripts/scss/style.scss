@@ -1,0 +1,91 @@
+/*
+BASE UNDERSCORES THEME CSS
+*/
+@import '_child';
+
+/*
+CUSTOM BOOTSTRAP
+*/
+
+$primary-text-emphasis-dark:#000;
+$secondary-text-emphasis-dark:#000;
+$success-text-emphasis-dark:#000;
+$info-text-emphasis-dark:#000;
+$warning-text-emphasis-dark:#000;
+$danger-text-emphasis-dark:#000;
+$light-text-emphasis-dark:#000;
+$dark-text-emphasis-dark:#000;
+
+$primary-bg-subtle-dark:#000;
+$secondary-bg-subtle-dark:#000;
+$success-bg-subtle-dark:#000;
+$info-bg-subtle-dark:#000;
+$warning-bg-subtle-dark:#000;
+$danger-bg-subtle-dark:#000;
+$light-bg-subtle-dark:#000;
+$dark-bg-subtle-dark:#000;
+
+$primary-border-subtle-dark:#000;
+$secondary-border-subtle-dark:#000;
+$success-border-subtle-dark:#000;
+$info-border-subtle-dark:#000;
+$warning-border-subtle-dark:#000;
+$danger-border-subtle-dark:#000;
+$light-border-subtle-dark:#000;
+$dark-border-subtle-dark:#000;
+
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_maps";
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 900px,
+  lg: 1000px,
+  xl: 1200px,
+  xxl: 1900px
+);
+
+
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+$content-width: 1440px;
+
+
+$darkgray:#35444e;
+$medgray: #707070;
+$gray: #425563;
+$lightgray: #8E99A1;
+$white: #ffffff;
+$offwhite:#e2e3e5;
+$medgray:#A2ACAB;
+$orange: #DDA46F;
+
+
+body{
+  font-family: 'Inter', sans-serif; /*  100, 400, 600, 700 */
+  font-size:16px;
+
+  #page{
+    margin-top:139px;
+  }
+}
+
+@media screen and (min-width:1000px){
+  body{
+    #page{
+      margin-top:148px;
+    }
+  }
+}
+
+@import '_perfection';
+@import '_header';
+@import '_footer';
+@import '_home';
+@import '_flexiblecontent';
+@import '_page_specific';
+@import '_search';

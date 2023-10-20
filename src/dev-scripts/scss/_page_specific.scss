@@ -1,0 +1,219 @@
+.flexible-content{
+
+}
+
+.single-case-studies{
+    .flexible-content{
+        .fc-content-sorter{
+            .content-container{
+                .subnav{
+                    .category-container{
+                        .header-container .icon{
+                            display:none;
+                        }
+
+                        .category-items{
+                            max-height:800px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.page_giving-back{
+ .flexible-content{
+    .fc-page-intro{
+        .excerpt{
+            &:before{
+                aspect-ratio:1;
+                background:url(/wp-content/uploads/2023/09/quote-icon.png)no-repeat center;
+                background-size:contain;
+                content:'';
+                display:block;
+                margin-bottom:30px;
+                position:relative;
+                width:32px;
+            }
+
+            p{
+                font-size:32px;
+            }
+        }
+    }
+ }
+}
+
+
+@media screen and (min-width:900px){ // MD
+    .flexible-content{
+        .fc-halves{
+            &.about{
+                .left,.right{
+                    &.overview{
+                        justify-content:flex-start;
+                        padding:30px;
+
+                        .content{
+                            display:flex;
+                            flex-direction:column;
+                            margin-bottom:auto;
+                            padding:0;
+                            width:100%;
+
+                            .title{
+                                max-width:650px;
+                                width:calc(100% - 60px);
+                            }
+                        }
+                    }
+                }
+
+                .left{
+                    &.bullets{
+                        .content{
+                            padding-bottom:30px;
+                        }
+                    }
+                }
+                .right{
+                    &.bullets{
+                        .content{
+                            padding-top:30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    body.page_markets{
+        .flexible-content{
+            .fc-4-blocks{
+                .content-container{
+                    .blocks{
+                        .block{
+                            &:before{
+                                background:white;
+                                content:'';
+                                height:105px;
+                                left:55px;
+                                position:absolute;
+                                top:72px;
+                                transform:scaleY(0);
+                                transform-origin:0 0;
+                                transition:800ms transform;
+                                width:2px;
+                                z-index:1;
+                            }
+
+                            &:hover{
+                                &:before{
+                                    transform:scaleY(1);
+                                    transition:250ms transform;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    body.page_about{
+        .flexible-content{
+            .fc-3-blocks{
+                .content-container{
+                    .blocks{
+                        .block{
+                            &:before{
+                                background:white;
+                                content:'';
+                                height:105px;
+                                left:55px;
+                                position:absolute;
+                                top:72px;
+                                transform:scaleY(0);
+                                transform-origin:0 0;
+                                transition:800ms transform;
+                                width:2px;
+                                z-index:1;
+                            }
+
+                            &:hover{
+                                &:before{
+                                    transform:scaleY(1);
+                                    transition:250ms transform;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+    .flexible-content{
+        .fc-halves{
+
+            &.about{
+                .left,.right{
+                    &.overview{
+                        padding: 144px 30px;
+                    }
+
+                    &.wysiwyg{
+                        padding: 144px 30px;
+
+                        .content{
+                            .title{
+                                font-size:18px;
+                            }
+
+                            .custom-content{
+                                
+                                font-size:18px;
+
+                                h6{
+
+                                    font-size:18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1440px){
+    .flexible-content{
+
+        
+        .fc-halves{
+
+            &.about{
+                .left,.right{
+                    &.overview{
+                        padding: 144px 0px;
+                    }
+
+                    &.wysiwyg{
+                        //padding: 144px 0px;
+
+                    }
+                }
+            }
+        }
+    }
+}

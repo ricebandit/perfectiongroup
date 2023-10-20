@@ -1,0 +1,141 @@
+footer{
+    background:$gray;
+    color:white;
+    padding-top:72px;
+    position:relative;
+
+    .content-container{
+
+        a{
+            color:white;
+            text-decoration:none;
+    
+            &:visited{
+                color:white;
+            }
+    
+            &:hover{
+                color:$offwhite;
+            }
+        }
+
+        .summary{
+    
+            .header-text{
+                aspect-ratio:200 / 50;
+                background:url(/wp-content/uploads/2023/09/footer_tagline.svg)no-repeat center;
+                background-size:contain;
+                width:250px;
+            }
+
+            .subheader{
+                margin-bottom:30px;
+            }
+
+            .contacts{
+                .contact{
+                    margin-bottom:10px;
+                }
+            }
+
+        }
+    
+        .categories{
+            .category-column{
+                margin-top:15px;
+                .category-section{
+                    margin-top:20px;
+        
+                    .category-title{
+                        color:$medgray;
+                        font-size:16px;
+                        margin-bottom:10px;
+
+                        p{
+                            margin-bottom:0;
+                        }
+                    }
+    
+                    .category-items{
+                        .category-item{
+                            margin-bottom:10px;
+                            &.icon{
+                                height:24px;
+                                margin-left:15px;
+                                transition:500ms transform;
+                                width:24px;
+
+                                &:hover{
+                                    transform:scale(1.2);
+                                    transition:250ms transform;
+                                }
+    
+                                &:first-child{
+                                    margin-left:0;
+                                }
+
+                                &.fb{
+                                    background:url(/wp-content/uploads/2023/09/icon-fb.png)no-repeat center;
+                                    background-size:contain;
+                                }
+
+                                &.li{
+                                    background:url(/wp-content/uploads/2023/09/icon-li.png)no-repeat center;
+                                    background-size:contain;
+                                }
+
+                                &.yt{
+                                    background:url(/wp-content/uploads/2023/09/icon-yt.png)no-repeat center;
+                                    background-size:contain;
+                                }
+                            }
+    
+                            &.award{
+                                aspect-ratio:117 / 186;
+                                margin-top:15px;
+                                width:58px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .legal{
+            margin-top:30px;
+            padding-bottom:32px;
+            padding-top:16px;
+            position:relative;
+    
+            &:before{
+                background:#A2ACAB;
+                content:'';
+                height:2px;
+                position:absolute;
+                top:0;
+                width:calc(100% - 24px);
+            }
+    
+            span{
+                font-size:12px;
+            }
+    
+        }
+    }
+}
+
+@media screen and (min-width:900px){
+    footer{
+        .content-container{
+            .categories{
+                .category-column{
+                    .category-section{
+                        &:first-child{
+                            margin-top:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

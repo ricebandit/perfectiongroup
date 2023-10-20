@@ -1,0 +1,115 @@
+.search{
+    .site-main{
+        display:flex;
+        justify-content:center;
+        padding:144px 0;
+        position:relative;
+
+        .content-container{
+            header{
+                &.page-header{
+                    position:relative;
+                    z-index:-1;
+                }
+            }
+
+            .list-container{
+                display:grid;
+                gap:30px;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top:30px;
+
+                .post-listing{
+                    color:$lightgray;
+                    display:flex;
+                    flex-direction:column;
+                    text-decoration:none;
+
+                    &:hover{
+                        .img{
+                            .img-asset{
+                                transform:scale(1.2);
+                                transition:250ms transform;
+                            }
+                        }
+                    }
+
+                    .img{
+                        aspect-ratio:4 / 3;
+                        overflow:hidden;
+                        position:relative;
+                        width:100%;
+
+                        .img-asset{
+                            height:100%;
+                            left:0;
+                            position:absolute;
+                            top:0;
+                            transform:scale(1.01);
+                            transition:1200ms transform;
+                            width:100%;
+                        }
+                    }
+
+                    .title{
+                        color:$gray;
+                        font-size:32px;
+                        line-height:1.1;
+                        margin-top:10px;
+                    }
+
+                    .tags{
+                        color:$gray;
+                    }
+
+                    .excerpt{
+                        margin-top:10px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (min-width:768px){
+    .search{
+        .site-main{
+            .content-container{
+                .list-container{
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .post-listing{
+                        flex-direction:column;
+
+                        .img{
+                            aspect-ratio:16 / 9;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    .search{
+        .site-main{
+            .content-container{
+                .list-container{
+                    grid-template-columns: repeat(4, 1fr);
+
+                    .post-listing{
+                        flex-direction:column;
+
+                        .img{
+                            aspect-ratio:4 / 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
